@@ -1,15 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Logs from './grafanaLoki';
+import { BrowserRouter } from 'react-router-dom';
+
+import ReRoutes from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Logs />
-
-      </header>
-    </div>
+    <BrowserRouter >
+      <ReRoutes />
+    </BrowserRouter>
   );
 }
 
